@@ -127,9 +127,9 @@ const Quiz = () => {
     }
   };
   return (
-    <div className="w-full h-screen dark:text-white text-black pt-10 flex justify-center ">
+    <div className="w-full h-screen dark:text-white text-black flex items-center justify-center ">
       <Card>
-        <div className="w-full h-screen dark:text-white text-black  flex flex-row items-center justify-center">
+        <div className="w-full h-screen dark:text-white text-black gap-y-5 flex flex-col items-center justify-center">
           {showScore ? (
             <div className="flex w-full h-full flex-row justify-center items-center">
               <h1 className="font-bold text-xl text-center flex flex-row justify-center items-center ">
@@ -138,14 +138,16 @@ const Quiz = () => {
             </div>
           ) : (
             <>
-              <div className="w-1/2 text-center flex flex-col gap-y-5">
+              <div className=" text-center flex flex-col gap-y-10 pb-10">
                 <h1 className="font-bold text-xl">
                   Pertanyaan {currentQuestion + 1}{" "}
                   <span>/{questions.length}</span>
                 </h1>
-                <h1>{questions[currentQuestion].questionText}</h1>
+                <h1 className="mb-10 pb-10">
+                  {questions[currentQuestion].questionText}
+                </h1>
               </div>
-              <div className="w-1/2 text-center flex flex-col">
+              <div className="text-center flex flex-row ">
                 {questions[currentQuestion].answerOptions.map(
                   (answerOption) => (
                     <button
