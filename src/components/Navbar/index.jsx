@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="gap-x-[45px] text-lg flex flex-row">
         <h1 className="font-bold">Aplikasi Quiz</h1>
         <ul className="flex flex-row gap-x-[30px] ">
-          <a href="/" className="cursor-pointer ">
+          <a href="/" className="cursor-pointer">
             About
           </a>
           <a href="/modul" className="cursor-pointer">
