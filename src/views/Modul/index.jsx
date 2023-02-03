@@ -12,7 +12,7 @@ const Modul = () => {
           <div>
             <a href="#" title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-full"
+                className="object-scale-down h-48 w-96 md:h-full md:w-full"
                 src="https://media.sketchfab.com/models/9ef1c68fbb944147bcfcc891d3912645/thumbnails/0893869b4e6748c1b4094a821eb37d82/185512607c1a47b99b36d9dc9327735e.jpeg"
                 alt=""
               />
@@ -38,7 +38,7 @@ const Modul = () => {
           <div>
             <a href="#" title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-full"
+                className="object-scale-down h-48 w-96 md:h-full md:w-full"
                 src="https://www.sampoernaacademy.sch.id/wp-content/uploads/2022/01/rsz_solar_system.jpg"
                 alt=""
               />
@@ -68,7 +68,7 @@ const Modul = () => {
           <div>
             <a href="#" title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-full"
+                className="object-scale-down h-48 w-96 md:h-full md:w-full"
                 src="https://media.sketchfab.com/models/eff495d9315c47dbb2777ec80bef40d8/thumbnails/4322ae592d0f4a8aa05622936e5fce54/f290806ea9b74cb5a7e2e49855babf31.jpeg"
                 alt=""
               />
@@ -94,7 +94,7 @@ const Modul = () => {
           <div>
             <a href="#" title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-full"
+                className="object-scale-down h-48 w-96 md:h-full md:w-full"
                 src="https://media.sketchfab.com/models/998ae41e953f41b197e3d3421cb9f777/thumbnails/ea641ea98a584a80ab9f5a76e7058826/93080c557f22405ca2e18b4d1ddbbeca.jpeg"
                 alt=""
               />
@@ -123,7 +123,7 @@ const Modul = () => {
           <div>
             <a href="#" title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-full"
+                className="object-scale-down h-48 w-96 md:h-full md:w-full"
                 src="https://img2.cgtrader.com/items/635501/b60f85aa2f/large/moon-3d-model-3d-model-max-obj-fbx-ztl.jpg"
                 alt=""
               />

@@ -15,7 +15,7 @@ const Navbar = () => {
   };
   return (
     <NavLayout>
-      <div className="gap-x-[45px] text-lg flex flex-row">
+      <div className="gap-x-[45px] text-lg flex md:flex-row flex-col items-center justify-center pl-28 md:pl-0">
         <h1 className="font-bold">Aplikasi Quiz</h1>
         <ul className="flex flex-row gap-x-[30px] ">
           <a href="/" className="cursor-pointer">
@@ -36,7 +36,7 @@ const Navbar = () => {
           <BsMoon onClick={togleDarkMod} size={20} />
         )}
 
-        <h1 className="text-lg">Gibran Farras</h1>
+        <h1 className="hidden md:block text-lg">Gibran Farras</h1>
       </div>
     </NavLayout>
   );
