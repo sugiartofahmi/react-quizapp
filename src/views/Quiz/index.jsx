@@ -138,16 +138,14 @@ const Quiz = () => {
             </div>
           ) : (
             <>
-              <div className=" text-center flex flex-col gap-y-10 pb-10">
+              <div className=" text-center flex flex-col ">
                 <h1 className="font-bold text-xl">
                   Pertanyaan {currentQuestion + 1}
                   <span>/{questions.length}</span>
                 </h1>
-                <h1 className="mb-10 pb-10">
-                  {questions[currentQuestion].questionText}
-                </h1>
+                <h1 className="">{questions[currentQuestion].questionText}</h1>
               </div>
-              <div className="text-center flex flex-col mx-10 ">
+              <div className="text-center flex md:flex-row flex-col mx-10 ">
                 {questions[currentQuestion].answerOptions.map(
                   (answerOption) => (
                     <button
