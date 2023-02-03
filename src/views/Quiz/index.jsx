@@ -127,39 +127,43 @@ const Quiz = () => {
     }
   };
   return (
-    <Card>
-      <div className="flex w-full h-full flex-row gap-x-5 ">
-        {showScore ? (
-          <div className="flex w-full h-full flex-row justify-center items-center">
-            <h1 className="font-bold text-xl text-center flex flex-row justify-center items-center ">
-              Nilai kamu {score} dari {questions.length}
-            </h1>
-          </div>
-        ) : (
-          <>
-            <div className="w-1/2 text-center flex flex-col gap-y-5">
-              <h1 className="font-bold text-xl">
-                Pertanyaan {currentQuestion + 1}{" "}
-                <span>/{questions.length}</span>
+    <div className="w-full h-screen dark:text-white text-black pt-10 flex justify-center ">
+      <Card>
+        <div className="w-full h-screen dark:text-white text-black  flex flex-row items-center justify-center">
+          {showScore ? (
+            <div className="flex w-full h-full flex-row justify-center items-center">
+              <h1 className="font-bold text-xl text-center flex flex-row justify-center items-center ">
+                Nilai kamu {score} dari {questions.length}
               </h1>
-              <h1>{questions[currentQuestion].questionText}</h1>
             </div>
-            <div className="w-1/2 text-center flex flex-col">
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <button
-                  className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                  onClick={() =>
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </Card>
+          ) : (
+            <>
+              <div className="w-1/2 text-center flex flex-col gap-y-5">
+                <h1 className="font-bold text-xl">
+                  Pertanyaan {currentQuestion + 1}{" "}
+                  <span>/{questions.length}</span>
+                </h1>
+                <h1>{questions[currentQuestion].questionText}</h1>
+              </div>
+              <div className="w-1/2 text-center flex flex-col">
+                {questions[currentQuestion].answerOptions.map(
+                  (answerOption) => (
+                    <button
+                      className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                      onClick={() =>
+                        handleAnswerOptionClick(answerOption.isCorrect)
+                      }
+                    >
+                      {answerOption.answerText}
+                    </button>
+                  )
+                )}
+              </div>
+            </>
+          )}
+        </div>
+      </Card>
+    </div>
   );
 };
 

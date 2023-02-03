@@ -13,7 +13,7 @@ const About = () => {
             <div>
               <img
                 className="w-full mx-auto sm:max-w-xs"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/team/2/business-man.jpg"
+                src="./gibran.jpeg"
                 alt=""
               />
             </div>

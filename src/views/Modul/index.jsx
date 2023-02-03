@@ -1,6 +1,6 @@
 const Modul = () => {
   return (
-    <section className=" w-full h-screen dark:text-white text-black pt-10">
+    <section className=" w-full h-full dark:text-white text-black pt-10">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
           <h2 className="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
