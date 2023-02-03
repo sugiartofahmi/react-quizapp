@@ -12,7 +12,7 @@ const About = () => {
           <div className="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10">
             <div>
               <img
-                className="w-full mx-auto sm:max-w-xs"
+                className="w-full mx-auto sm:max-w-xs hover:shadow-2xl shadow-white hover:scale-125 rounded-full"
                 src="./gibran.png"
                 alt=""
               />
