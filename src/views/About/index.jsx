@@ -13,7 +13,7 @@ const About = () => {
             <div>
               <img
                 className="w-full mx-auto sm:max-w-xs"
-                src="./gibran.jpeg"
+                src="./gibran.png"
                 alt=""
               />
             </div>
