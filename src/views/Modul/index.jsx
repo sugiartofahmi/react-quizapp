@@ -145,7 +145,7 @@ const Modul = () => {
               "Tata Surya: Pengertian, Teori, dan Anggotanya, dari Matahari
               hingga Meteor"
             </p>
-            <div className="h-0 mt-6 mb-4 border-t-2 "></div>
+            <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
           </div>
         </div>
       </div>
